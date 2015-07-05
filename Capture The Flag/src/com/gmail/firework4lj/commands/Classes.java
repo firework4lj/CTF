@@ -38,7 +38,6 @@ public class Classes implements CommandExecutor{
 	* Player enters '/classes' and no arguments. If classes have been created by the admin and exist in the config file, 
 	* player receives a message listing all available classes.
 	* If no classes exist, player receives an error message telling them to ask the server admin to setup some classes.
-	*
 	*/
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

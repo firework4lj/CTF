@@ -8,6 +8,19 @@ import org.bukkit.entity.Player;
 
 import com.gmail.firework4lj.main.Main;
 
+	/* How this class works:
+	 * Player enters '/ctfsetup new test'
+	 * config stores the arena name "test".
+	 * Player then gets sent a message to use '/arenasetup test'
+	 * (If only '/ctfsetup' is entered, player gets an error and is shown how to use command.)
+	 * 
+	 * Player enters '/arenasetup test'
+	 * Player is then guided through a setup process where they have to stand on locations for main spawn, blue team spawn, red team spawn, red flag spawn, and blue flag spawn.
+	 * All the location data is stored in the main config. Location data pulled is world, x, y, and z.
+	 * 
+	 */
+
+
 public class Setup implements CommandExecutor{
 
 	private Main main;

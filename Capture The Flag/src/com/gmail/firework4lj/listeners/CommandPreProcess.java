@@ -8,6 +8,15 @@ import org.bukkit.event.server.ServerCommandEvent;
 
 import com.gmail.firework4lj.main.Main;
 
+	/* What this class does:
+	 * 
+	 * This is an event handler class. However, it does deal with commands.
+	 * What this class does is listens for a '/reload' command from an in game player, or an administrator issues a 'reload' command from the console.
+	 * When this is done, the server forces all players in the ctf game to use '/ctf leave'
+	 * 
+	 * This class is here because there are no efficient methods for executing commands on reload.
+	 */
+
 public class CommandPreProcess implements Listener{
 
 	private Main main;

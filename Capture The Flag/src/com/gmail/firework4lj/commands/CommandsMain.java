@@ -248,7 +248,6 @@ public class CommandsMain implements CommandExecutor{
 						p.getInventory().setLeggings(new ItemStack(Material.AIR));
 						p.getActivePotionEffects().clear();
 						p.getInventory().clear();
-	// TODO Change this next line so it brings them back to there spot before joining ctf
 						p.teleport(JoinLocation);
 						Main.joinx.remove(p.getName());
 						Main.joiny.remove(p.getName());

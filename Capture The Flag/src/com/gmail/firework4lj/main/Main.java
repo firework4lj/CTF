@@ -13,6 +13,7 @@ import com.gmail.firework4lj.listeners.CommandPreProcess;
 import com.gmail.firework4lj.listeners.ItemDespawn;
 import com.gmail.firework4lj.listeners.PlayerAttack;
 import com.gmail.firework4lj.listeners.PlayerInteractions;
+import com.gmail.firework4lj.listeners.PlayerLeaveGame;
 import com.gmail.firework4lj.listeners.PlayerPickupItem;
 import com.gmail.firework4lj.listeners.PlayerRespawn;
 
@@ -80,6 +81,7 @@ public class Main extends JavaPlugin{
 		pm.registerEvents(new PlayerAttack(this), this);
 		pm.registerEvents(new PlayerRespawn(this), this);
 		pm.registerEvents(new CommandPreProcess(this), this);
+		pm.registerEvents(new PlayerLeaveGame(this), this);
 	
 		// Registering default arena (1st in config)
 		if (this.getConfig().getConfigurationSection("arenas") == null){	
